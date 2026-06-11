@@ -13,16 +13,12 @@ description: >
   any EVM-compatible RPC URL, including Pharos Pacific mainnet and
   Atlantic testnet).
   Do not attempt dust detection without reading this skill.
-version: 0.1.0
-requires:
-  - python >= 3.9
-  - requests
-  - anyBins:
-      - cast   # optional, used for manual cross-check of balances
-      - jq     # optional, used for ergonomic RPC URL extraction
+version: 2.0.0
+requires: read
+bins: [bash, cast, jq]
 author: cexco10
-bins: [python3]
-tags: [pharos, blockchain, agent-skill]
+network: pharos
+tags: [pharos, blockchain, agent-skill, security, wallet, dust, foundry]
 agents: [claude, codex, gemini, openclaw]
 ---
 
